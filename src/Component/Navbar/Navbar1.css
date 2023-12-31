@@ -7,20 +7,24 @@
 .brandname
 {
     text-align: left;
-    margin-left: 10px;
-    margin-right: 550px;
+    margin-left: 20px;
+    margin-right: 750px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+    
 }
+
+/* .brandname Link{
+        text-decoration: none;
+} */
 
 .item
 {
-    margin-right: 20px;
+    margin-right: 10px;
     color: white !important;
-
 }
 
 .right
 {
+
   text-align: right;
 }

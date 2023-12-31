@@ -1,14 +1,19 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container"
+import Container from "react-bootstrap/Container";
 import logo from "./logo.jpg";
 import "./Navbar1.css";
-import IconButton from "@mui/material/IconButton";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import PersonIcon from '@mui/icons-material/Person';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import{Link} from 'react-router-dom'
 
 const Navbar1 = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
       <Navbar className="navbar">
@@ -20,37 +25,75 @@ const Navbar1 = () => {
             height={"50px"}
             style={{ borderRadius: "50px" }}
           />
-          <Navbar className="brandname" style={{ color: "white" }}>
+          <Navbar className="brandname" >
+            <Link to="/" style={{ color: "white " }}>
             MAVRICK
+            </Link>
           </Navbar>
 
           <Nav>
-            <Nav.Link className="item" href="#home">
-              BOOK
-            </Nav.Link>
-            <Nav.Link className="item" href="#link">
-              MY_PLANS
-            </Nav.Link>
-            <Nav.Link className="item" href="#link">
-              TRAVEL_INFO
-            </Nav.Link>
-            <Nav.Link className="item" href="#link">
+            <Link
+              className="item"
+              href="#link"
+              style={{ marginRight: "20px" }}
+            >
+              MY PLANS
+            </Link>
+            <Link to="/About"
+              className="item"
+              
+              style={{ marginRight: "20px" }}
+            >
+              ABOUT US
+            </Link>
+            <Link to="/Deals"
+              className="item"
+              
+              style={{ marginRight: "20px" }}
+            >
               DEALS
-            </Nav.Link>
-            <Nav.Link className="item" href="#link">
+            </Link>
+            <Link to="/Helplink2"
+              className="item"
+            
+              style={{ marginRight: "20px" }}
+            >
               HELP
-            </Nav.Link>
-            <Nav.Link>
-              {" "}
-              <IconButton color="primary" aria-label="add to shopping cart">
-                <AddShoppingCartIcon />
-              </IconButton>
-            </Nav.Link>
-            <Nav.Link className="item" href="#link">
+            </Link>
+
+
+            <Link>
+              <Button variant="primary" onClick={handleShow}>
+                SIGN UP
+              </Button>
+
+              <Modal show={show} onHide={handleClose}>
+                {/* <Modal.Header closeButton>
+                  <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  Woohoo, you are reading this text in a modal!
+                </Modal.Body> */}
+                <Modal.Footer>
+                  <Link to="/Sign">
+                  <Button variant="secondary" onClick={handleClose}>
+                    SIGN UP
+                  </Button>
+                  </Link>
+                  <Link to="/Login">
+                  <Button variant="primary" onClick={handleClose}>
+                    LOGIN
+                  </Button>
+                  </Link>
+                </Modal.Footer>
+              </Modal>
+            </Link>
+
+            {/* <Nav.Link className="item" href="#link">
             <IconButton color="primary" aria-label="add to shopping cart">
                 <PersonIcon />
               </IconButton>
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>
