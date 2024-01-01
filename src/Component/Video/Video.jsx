@@ -6,6 +6,10 @@ const Video = () => {
   return (
     <div className='vidbg'>
         <video src={vid} alt="" autoPlay={"true"} loop muted />
+
+        <div>
+          {/* <Form1/> */}
+        </div>
     </div>
   )
 }

@@ -32,7 +32,7 @@ const Firstp = () => {
         </ol>
         <br />
         <h1>
-            In the loby
+            In the lobby
         </h1>
         <br />
         <img src={pick1} alt="" width={'70%'} />

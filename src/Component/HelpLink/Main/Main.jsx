@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 const Main = () => {
   return (
     <Container>
-    <h3 className='bb2' style={{textAlign:'center'}}>Helful Links</h3>
+    <h3 className='bb2' style={{textAlign:'center'}}>Helpful Links</h3>
       <br />
     <div className="container" style={{textAlign:"center"}}>
 

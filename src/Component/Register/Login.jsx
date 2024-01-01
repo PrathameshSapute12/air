@@ -2,10 +2,6 @@ import React from 'react'
 import { useState } from "react";
 import "./Form.css";
 import vid from "./1.mp4";
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
 const Login = () => {
   const [validated, setValidated] = useState(false);
   const [email, setemail] = useState('');
@@ -55,7 +51,7 @@ const Login = () => {
           <h1>Login</h1>
           <div className="input">
             <label>Email:</label>
-            <input id="inp3" type="email" placeholder="Email" required value={email} onChange={(e) => setemail(e.target.value)} />
+            <input id="inp3" type="email" placeholder="Email" required />
           </div>
 
           <div className="input">
@@ -67,7 +63,7 @@ const Login = () => {
 
           <div className="login-link">
             <p>
-              Don't have an account?<Link to='/Sign'>SignUp</Link>
+              Don't have an account?<a href="#">Sign Up</a>
             </p>
           </div>
         </form>
@@ -76,4 +72,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default Login;

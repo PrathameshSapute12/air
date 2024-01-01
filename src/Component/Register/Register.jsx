@@ -3,9 +3,7 @@ import React from "react";
 import { useState } from "react";
 import "./Form.css";
 import vid from "./1.mp4";
-import axios from 'axios';
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 
 const Register = () => {
   const [validated, setValidated] = useState(false);
@@ -83,7 +81,7 @@ const Register = () => {
 
           <div className="login-link">
             <p>
-              Already have an account?<Link to='/Login'>Login</Link>
+              Already have an account?<a href="#">Login</a>
             </p>
           </div>
         </form>
