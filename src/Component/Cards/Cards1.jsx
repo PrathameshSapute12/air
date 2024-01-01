@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 const Cards1 = (prop) => {
   return (
     <div className='text'>
@@ -17,7 +18,9 @@ const Cards1 = (prop) => {
             prop.description
           }
         </Card.Text>
+        <Link to={prop.path}>
         <Button variant="outlined">{prop.button}</Button>
+        </Link>
       </Card.Body>
     </Card>
 

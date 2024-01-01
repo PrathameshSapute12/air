@@ -27,7 +27,7 @@ const Navbar1 = () => {
           />
           <Navbar className="brandname" >
             <Link to="/" style={{ color: "white " }}>
-            MAVRICK
+            MAVERICK
             </Link>
           </Navbar>
 

@@ -136,7 +136,7 @@ const Help = () => {
             </Col>
         </Row>
 
-        <Row className='three'>
+        <Row className='three1'>
             <Col>
                 <h4 className='one'>Keeping your children occupied</h4>
                 <p className='one'>We’ve partnered with Sesame Workshop, the nonprofit educational organization behind Sesame Street, to create a brand-new Children’s Travel Kit. The kit is made from recycled paper and includes an activity book, crayons and a puzzle. Plus, United is the first U.S. carrier to offer a Sensory Calming strip that has a textured surface to help soothe anxiety. Ask your flight attendant to find out if the kits are available on your next flight.</p>

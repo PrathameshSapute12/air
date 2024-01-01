@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import "./Form.css";
 import vid from "./1.mp4";
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -58,7 +59,7 @@ const Register = () => {
 
           <div className="login-link">
             <p>
-              Already have an account?<a href="#">Login</a>
+              Already have an account?<Link to="/Login">Login</Link>
             </p>
           </div>
         </form>

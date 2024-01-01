@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import "./Form.css";
 import vid from "./1.mp4";
+import { Link } from 'react-router-dom';
 const Login = () => {
   const [validated, setValidated] = useState(false);
 
@@ -25,7 +26,7 @@ const Login = () => {
           <h1>Login</h1>
           <div className="input">
             <label>Email:</label>
-            <input id="inp3" type="email" placeholder="Email" required />
+            <input id="inp3" type="email"  placeholder="Email" required />
           </div>
 
           <div className="input">
@@ -37,7 +38,7 @@ const Login = () => {
 
           <div className="login-link">
             <p>
-              Don't have an account?<a href="#">Sign Up</a>
+              Don't have an account?<Link to="/Sign">Sign Up</Link>
             </p>
           </div>
         </form>
@@ -46,4 +47,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default Login;

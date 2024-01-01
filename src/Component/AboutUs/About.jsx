@@ -11,8 +11,8 @@ const About = () => {
        <div className='contain'>
 
           <div className='abc' >
-            <h3>Welcome to Mavrick</h3>
-            <p>At Mavrick, we soar beyond boundaries, connecting people and places with a commitment to excellence that spans 10 years. Since our inception in 2023, we've been dedicated to delivering more than just flights; we provide experiences that elevate travel and redefine the journey itself.</p>
+            <h3>Welcome to Maverick</h3>
+            <p>At Maverick, we soar beyond boundaries, connecting people and places with a commitment to excellence that spans 10 years. Since our inception in 2023, we've been dedicated to delivering more than just flights; we provide experiences that elevate travel and redefine the journey itself.</p>
           </div>
 
           <div className='abc' >
@@ -22,12 +22,12 @@ const About = () => {
 
           <div className='abc' >
             <h3>Our Commitment</h3>
-            <p>At the heart of our operations lies a dedication to our passengers. We strive to offer unparalleled comfort, convenience, and efficiency in every journey. Our commitment to safety is unwavering, adhering to the highest industry standards to ensure peace of mind for every traveler who chooses Mavrick.</p>
+            <p>At the heart of our operations lies a dedication to our passengers. We strive to offer unparalleled comfort, convenience, and efficiency in every journey. Our commitment to safety is unwavering, adhering to the highest industry standards to ensure peace of mind for every traveler who chooses Maverick.</p>
           </div>
 
           <div className='abc' >
             <h3>Our Services</h3>
-            <p>From the moment you book with us until the wheels touch down at your destination, Mavrick strives to exceed your expectations. Whether you're traveling for business or leisure, our comprehensive services cater to your needs, offering premium amenities, innovative entertainment, and culinary delights on board.</p>
+            <p>From the moment you book with us until the wheels touch down at your destination, Maverick strives to exceed your expectations. Whether you're traveling for business or leisure, our comprehensive services cater to your needs, offering premium amenities, innovative entertainment, and culinary delights on board.</p>
           </div>
       
     </div>

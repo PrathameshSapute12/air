@@ -66,8 +66,8 @@ export default function App() {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2023 Copyright :
-        <a className='text-white' href='https://mdbootstrap.com/'>
-          Airline
+        <a className='text-white' href=''>
+          Mavrick
         </a>
       </div>
     </MDBFooter>
